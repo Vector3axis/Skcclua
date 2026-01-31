@@ -1,1 +1,9 @@
-loadstring(game:HttpGet("https://pastebin.com/raw/d0RBNZja"))()
+-- Copy Discord invite to clipboard
+local link = "https://discord.gg/VDd64SGU5z"
+
+if setclipboard then
+    setclipboard(link)
+    print("Discord invite copied to clipboard!")
+else
+    warn("setclipboard is not supported on this executor.")
+end
